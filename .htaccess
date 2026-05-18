@@ -1,0 +1,2 @@
+#Rediriger vers 404.html si Erreur404
+ErrorDocument 404 /404.html 

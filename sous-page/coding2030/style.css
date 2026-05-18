@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidugu&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(#4b3f91, #05073a);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 1vh;
+    border: #00000000 solid 2px;
+    border-radius: 5vh;
+    transition: .3s;
+
+    &:hover {
+        border: #c9a9e4 solid 2px;
+        box-shadow: 0 0 30px #c9a9e4;
+        background-color: #c9a9e430;
+    }
+}
+
+h1 {
+    color: #fff;
+    font-family: "Inter";
+    line-height: 50%;
+    font-size: calc(1vh + 1.5vw);
+}
+
+h2 {
+    color: #ffffff50;
+    font-family: "Inter";
+    font-weight: 200;
+    line-height: 50%;
+    margin-top: 0;
+    margin-bottom: 10vh;
+    font-size: calc(1vh + 1vw);
+}
+
+h3 {
+    color: #fff;
+    font-family: "Gidugu";
+    font-weight: 200;
+    font-size: calc(5vh + 10vw);
+    line-height: 50%;
+    margin: 0;
+}
+
+h4 {
+    color: #fff;
+    font-family: "Gidugu";
+    font-weight: 200;
+    font-size: calc(2.5vh + 5vw);
+    line-height: 50%;
+    margin: 0;
+}

@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2757;
+}
+
+a, p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    font-size: 2vh;
+}
+
+img {
+    width: 40vw;
+}
+
+div img {
+    width: 20vw;
+    transition: 125ms;
+}
+
+div img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 1vh #000);
+}

@@ -1,0 +1,792 @@
+<!-- Coucou toi qui regarde dans le code
+
+
+/‾‾‾‾‾\ /‾‾‾‾‾] [‾‾‾‾‾‾‾‾] |‾‾‾‾‾] |‾‾‾‾‾\ |‾‾‾‾‾\ |‾| /‾/
+| |‾| | | |‾‾‾   ‾‾|  |‾‾  | |‾‾‾  |     | |     | | |/ /
+| | | | | |        |  |    |  ___] |     / |     / |  _/
+| |_| | | |___     |  |    | |___  | |\ \  | |\ \  | |
+\_____/ \_____]    |__|    |_____] |_| \_\ |_| \_\ |_|
+MADE ON EARTH BY HUMANS
+-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta property="og:title" content="Terry Segaunes - Code">
+    <meta property="og:description" content="Section coding du site web Portfolio de Terry Segaunes">
+    <title>Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="source/logo.svg">
+    <script defer src="code.js"></script>
+    <script defer src="slideMenu.js"></script>
+</head>
+<body class="codeBody">
+    <div id="indexMenu">
+        <div class="indexMenuCross" onclick="indexHideMenu()">
+            <svg viewBox="0 0 24 24" id="indexMenuSvg" fill="#fff">
+                <path d="M18.47 6.47 12.942 12l5.53 5.53-.942.94L12 12.942l-5.53 5.53-.94-.942L11.058 12l-5.53-5.53.942-.94L12 11.058l5.53-5.53.94.942Z"></path>
+            </svg>
+        </div>
+        <hr>
+        <div class="indexMenuSelection">
+            <h1>Portfolio</h1>
+            <h3>terrysegaunes.fr</h3>
+            <div>
+                <a href="index.html" id="indexAcceuil"><h2>ACCEUIL</h2></a>
+                <a href="code.html" id="indexMenuCode"><h2>CODE</h2></a>
+                <a href="robot.html" id="indexMenuRobot"><h2>ROBOTIQUE</h2></a>
+                <a href="art.html" id="indexMenuArt"><h2>ART</h2></a>
+                <a href="pro.html" id="indexMenuPro"><h2>PROFESSIONNEL</h2></a>
+            </div>
+        </div>
+    </div>
+    <header id="code_header">
+        <div id="code_header_left_part">
+            <img src="source/codeLogo.svg" alt="logo de la section code" id="code_logo" onclick="indexHideMenu()">
+            <div class="header_button" id="acceuil_button">
+                <h1>Acceuil</h1>
+                <svg class="down_arrow_svg" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 0.732793 -0.680451 0.732793 0 0.777252)" stroke="#56606D" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 -0.732793 0.680451 0.732793 6.5 7.77725)" stroke="#56606D" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="header_menu" id="acceuil_menu">
+                <a href="./index.html">
+                    <div class="header_menu_inner">
+                        <h1>CV</h1>
+                        <h2>Si vous devez faire vite</h2>
+                    </div>
+                </a>
+                <a href="./index.html#indexFooter">
+                    <div class="header_menu_inner">
+                        <h1>Contacts</h1>
+                        <h2>Me contacter</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="header_button" id="code_button">
+                <h1>Code</h1>
+                <svg class="down_arrow_svg" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 0.732793 -0.680451 0.732793 0 0.777252)" stroke="#56606D" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 -0.732793 0.680451 0.732793 6.5 7.77725)" stroke="#56606D" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="header_menu" id="code_menu">
+                <a href="./sous-page/mentions-honnorables">
+                    <div class="header_menu_inner">
+                        <h1>Mentions honnorables</h1>
+                        <h2>Aides et participations</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="header_button" id="robotique_button">
+                <h1>Robotique</h1>
+                <svg class="down_arrow_svg" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 0.732793 -0.680451 0.732793 0 0.777252)" stroke="#56606D" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 -0.732793 0.680451 0.732793 6.5 7.77725)" stroke="#56606D" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="header_menu" id="robotique_menu">
+                <a href="./robot.html">
+                    <div class="header_menu_inner">
+                        <h1>Fusion360</h1>
+                        <h2>Modelisation 3D</h2>
+                    </div>
+                </a>
+                <a href="./robot.html">
+                    <div class="header_menu_inner">
+                        <h1>PCB</h1>
+                        <h2>Soudure et carte programmee</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="header_button" id="art_button">
+                <h1>Art</h1>
+                <svg class="down_arrow_svg" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 0.732793 -0.680451 0.732793 0 0.777252)" stroke="#56606D" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 -0.732793 0.680451 0.732793 6.5 7.77725)" stroke="#56606D" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="header_menu" id="art_menu">
+                <a href="./art.html">
+                    <div class="header_menu_inner">
+                        <h1>Audiovisuel</h1>
+                        <h2>De la photo au montage</h2>
+                    </div>
+                </a>
+                <a href="./art.html">
+                    <div class="header_menu_inner">
+                        <h1>3D</h1>
+                        <h2>Animation et modelisation</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="header_button" id="plus_button">
+                <h1>Plus</h1>
+                <svg class="down_arrow_svg" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 0.732793 -0.680451 0.732793 0 0.777252)" stroke="#56606D" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 -0.732793 0.680451 0.732793 6.5 7.77725)" stroke="#56606D" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="header_menu" id="plus_menu">
+                <a href="./index.html#indexFooter">
+                    <div class="header_menu_inner">
+                        <h1>Me contacter</h1>
+                        <h2>Mes reseaux</h2>
+                    </div>
+                </a>
+                <a href="./sous-page/assistance">
+                    <div class="header_menu_inner">
+                        <h1>Assistance</h1>
+                        <h2>Aide et commentaires</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="code_header_right_part">
+            <div id="code_searchbar">
+                <svg id="search_svg" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.2593 19.1494C15.1094 20.8181 12.4044 21.6049 9.69498 21.3495C6.98551 21.0941 4.4752 19.8158 2.67503 17.7747C0.874862 15.7337 -0.0798483 13.0833 0.00523498 10.3632C0.0903183 7.64304 1.2088 5.05755 3.13301 3.13301C5.05755 1.2088 7.64304 0.0903183 10.3632 0.00523498C13.0833 -0.0798483 15.7337 0.874862 17.7747 2.67503C19.8158 4.4752 21.0941 6.98551 21.3495 9.69498C21.6049 12.4044 20.8181 15.1094 19.1494 17.2593L24.5702 22.6801C24.7463 22.8435 24.875 23.0515 24.9428 23.2819C25.0105 23.5124 25.0149 23.7569 24.9554 23.9897C24.8959 24.2224 24.7747 24.4348 24.6046 24.6044C24.4345 24.7741 24.2218 24.8947 23.9889 24.9536C23.7564 25.0132 23.5122 25.0091 23.2819 24.9416C23.0516 24.8741 22.8437 24.7458 22.6801 24.5702L17.2593 19.1494ZM18.7215 10.6972C18.7373 9.63373 18.5415 8.57772 18.1455 7.5906C17.7495 6.60348 17.1612 5.70496 16.4147 4.9473C15.6683 4.18965 14.7787 3.58798 13.7975 3.1773C12.8164 2.76662 11.7635 2.55513 10.6999 2.55513C9.63629 2.55513 8.58331 2.76662 7.60221 3.1773C6.6211 3.58798 5.73145 4.18965 4.98501 4.9473C4.23856 5.70496 3.65022 6.60348 3.25422 7.5906C2.85821 8.57772 2.66244 9.63373 2.6783 10.6972C2.70971 12.8039 3.56866 14.8138 5.06958 16.2925C6.5705 17.7712 8.5929 18.6001 10.6999 18.6001C12.8069 18.6001 14.8293 17.7712 16.3302 16.2925C17.8311 14.8138 18.69 12.8039 18.7215 10.6972Z" fill="#60656C"/>
+                </svg>
+                <input type="text" placeholder="Search of jump to..." id="searchbar">
+                <div id="search_bar_command_button">
+                    <h2>/</h2>
+                </div>
+            </div>
+            <div id="sign_up_div">
+                <h2>Sign up</h2>
+            </div>
+        </div>
+    </header>
+    <main id="code_main">
+        <div id="code_title">
+            <svg viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.06727e-06 3.49206C2.06727e-06 2.56591 0.373141 1.67769 1.03733 1.0228C1.70152 0.367913 2.60236 0 3.54167 0L15.9375 0C16.2193 0 16.4895 0.110374 16.6888 0.306841C16.8881 0.503307 17 0.769773 17 1.04762V18.5079C17 18.7858 16.8881 19.0522 16.6888 19.2487C16.4895 19.4452 16.2193 19.5556 15.9375 19.5556H12.3958C12.114 19.5556 11.8438 19.4452 11.6445 19.2487C11.4453 19.0522 11.3333 18.7858 11.3333 18.5079C11.3333 18.2301 11.4453 17.9636 11.6445 17.7672C11.8438 17.5707 12.114 17.4603 12.3958 17.4603H14.875V14.6667H3.54167C3.2627 14.6667 2.98996 14.748 2.75763 14.9002C2.52531 15.0525 2.34375 15.269 2.23573 15.5226C2.1277 15.7762 2.09802 16.0556 2.1504 16.3258C2.20278 16.5959 2.33489 16.8448 2.53017 17.0413C2.62784 17.1396 2.70491 17.2559 2.75699 17.3836C2.80906 17.5113 2.83512 17.6479 2.83368 17.7855C2.83223 17.9231 2.8033 18.0591 2.74855 18.1857C2.6938 18.3123 2.6143 18.427 2.51459 18.5233C2.41487 18.6196 2.29689 18.6956 2.16739 18.7469C2.03788 18.7983 1.89939 18.824 1.75982 18.8226C1.62024 18.8211 1.48232 18.7926 1.35392 18.7386C1.22553 18.6846 1.10917 18.6063 1.0115 18.5079C0.36226 17.8554 -0.0009999 16.9776 2.06727e-06 16.0635V3.49206ZM14.875 2.09524H3.54167C3.16594 2.09524 2.80561 2.2424 2.53993 2.50436C2.27426 2.76631 2.125 3.1216 2.125 3.49206V12.862C2.57174 12.6695 3.05414 12.5705 3.54167 12.5714H14.875V2.09524ZM4.25 17.1111C4.25 17.0185 4.28731 16.9297 4.35373 16.8642C4.42015 16.7987 4.51024 16.7619 4.60417 16.7619H9.5625C9.65643 16.7619 9.74652 16.7987 9.81293 16.8642C9.87935 16.9297 9.91667 17.0185 9.91667 17.1111V21.6508C9.91667 21.7156 9.89835 21.7792 9.86377 21.8344C9.82919 21.8895 9.77972 21.9341 9.72089 21.9631C9.66206 21.9921 9.5962 22.0044 9.53069 21.9986C9.46519 21.9928 9.40262 21.9691 9.35 21.9302L7.29583 20.4118C7.23462 20.3663 7.16002 20.3416 7.08333 20.3416C7.00665 20.3416 6.93205 20.3663 6.87083 20.4118L4.81667 21.9302C4.76405 21.9691 4.70148 21.9928 4.63597 21.9986C4.57047 22.0044 4.50461 21.9921 4.44578 21.9631C4.38695 21.9341 4.33747 21.8895 4.3029 21.8344C4.26832 21.7792 4.25 21.7156 4.25 21.6508V17.1111Z" fill="#60656C"/>
+            </svg>
+            <h1 id="code_user_title">terrysegaunes</h1>
+            <h1 id="code_between">/</h1>
+            <h1 id="code_nom_section">sectioncode</h1>
+            <div id="public_element">
+                <h2>Public</h2>
+            </div>
+        </div>
+        <div id="code_up_buttons">
+            <div id="preambule_div" class="up_button">
+                <svg viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0.888937C0 0.653178 0.0938276 0.427074 0.260842 0.260367C0.427856 0.0936603 0.654376 5.23649e-06 0.890569 5.23649e-06H5.94069C7.39766 5.23649e-06 8.69196 0.699298 9.50297 1.77905C9.91753 1.22587 10.4558 0.77696 11.0749 0.468095C11.6939 0.15923 12.3767 -0.0010561 13.0688 5.23649e-06H18.1094C18.3456 5.23649e-06 18.5721 0.0936603 18.7392 0.260367C18.9062 0.427074 19 0.653178 19 0.888937V13.334C19 13.5697 18.9062 13.7958 18.7392 13.9626C18.5721 14.1293 18.3456 14.2229 18.1094 14.2229H12.7577C12.4068 14.2229 12.0594 14.2919 11.7353 14.4259C11.4111 14.5599 11.1166 14.7564 10.8685 15.004L10.1299 15.74C9.96295 15.9065 9.7366 16 9.5006 16C9.26459 16 9.03824 15.9065 8.87126 15.74L8.13268 15.004C7.88459 14.7564 7.59006 14.5599 7.26591 14.4259C6.94176 14.2919 6.59434 14.2229 6.24348 14.2229H0.890569C0.654376 14.2229 0.427856 14.1293 0.260842 13.9626C0.0938276 13.7958 0 13.5697 0 13.334L0 0.888937ZM8.61002 13.1254L8.61477 7.11265L8.6124 4.4423C8.61177 3.73543 8.33001 3.05773 7.82904 2.55812C7.32806 2.05851 6.64886 1.77787 5.94069 1.77787H1.78114V12.4451H6.2423C7.07994 12.445 7.9006 12.6808 8.61002 13.1254ZM10.3959 4.44467L10.3912 13.123C11.1002 12.6798 11.9199 12.4449 12.7565 12.4451H17.2177V1.77787H13.0676C12.359 1.77787 11.6795 2.05883 11.1784 2.55896C10.6774 3.05908 10.3959 3.73739 10.3959 4.44467Z" fill="#60656C"/>
+                </svg>
+                <h1>Preambule</h1>
+            </div>
+            <div id="web_div" class="up_button">
+                <svg viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5198 0.285004L18.7295 5.36469C18.9017 5.53276 18.9984 5.7606 18.9984 5.99815C18.9984 6.2357 18.9017 6.46354 18.7295 6.63162L13.5198 11.7113C13.4075 11.8293 13.2645 11.9156 13.1061 11.961C12.9477 12.0064 12.7796 12.0094 12.6196 11.9695C12.4596 11.9296 12.3136 11.8484 12.197 11.7343C12.0804 11.6203 11.9974 11.4778 11.9569 11.3217C11.916 11.1658 11.9188 11.0021 11.9652 10.8477C12.0116 10.6934 12.0998 10.554 12.2205 10.4444L16.7805 5.99815L12.2205 1.55194C12.0995 1.44237 12.011 1.303 11.9644 1.14852C11.9178 0.994041 11.9148 0.830166 11.9557 0.674161C11.9966 0.518156 12.0799 0.375798 12.1968 0.262085C12.3138 0.148372 12.46 0.0675148 12.6201 0.0280318C12.7799 -0.0119085 12.9478 -0.00912231 13.1061 0.0360976C13.2645 0.0813176 13.4074 0.1673 13.5198 0.285004ZM5.47855 0.285004C5.65293 0.126746 5.88345 0.040567 6.12164 0.044579C6.35984 0.048591 6.58716 0.142482 6.75584 0.306518C6.92407 0.470984 7.02036 0.692636 7.02448 0.924888C7.02859 1.15714 6.94021 1.3819 6.7779 1.55194L2.2179 5.99815L6.7779 10.4444C6.89892 10.5539 6.98739 10.6933 7.03398 10.8478C7.08058 11.0023 7.08359 11.1661 7.04268 11.3221C7.00177 11.4781 6.91846 11.6205 6.80153 11.7342C6.68461 11.8479 6.53839 11.9288 6.37829 11.9683C6.21847 12.0082 6.05057 12.0054 5.89224 11.9602C5.73391 11.915 5.591 11.829 5.47855 11.7113L0.268868 6.63162C0.0967033 6.46354 0 6.2357 0 5.99815C0 5.7606 0.0967033 5.53276 0.268868 5.36469L5.47855 0.285004Z" fill="#60656C"/>
+                </svg>
+                <h1>Web</h1>
+            </div>
+            <div id="python_div" class="up_button">
+                <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="2" fill="#60656C"/>
+                    <circle cx="10" cy="10" r="9" stroke="#60656C" stroke-width="2"/>
+                </svg>
+                <h1>Python</h1>
+            </div>
+            <div id="autre_div" class="up_button">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.75C0 0.784 0.784 0 1.75 0H14.25C15.216 0 16 0.784 16 1.75V14.25C16 14.7141 15.8156 15.1592 15.4874 15.4874C15.1592 15.8156 14.7141 16 14.25 16H1.75C1.28587 16 0.840752 15.8156 0.512563 15.4874C0.184374 15.1592 0 14.7141 0 14.25L0 1.75ZM6.5 6.5V14.5H14.25C14.3163 14.5 14.3799 14.4737 14.4268 14.4268C14.4737 14.3799 14.5 14.3163 14.5 14.25V6.5H6.5ZM14.5 5V1.75C14.5 1.6837 14.4737 1.62011 14.4268 1.57322C14.3799 1.52634 14.3163 1.5 14.25 1.5H6.5V5H14.5ZM1.5 6.5V14.25C1.5 14.388 1.612 14.5 1.75 14.5H5V6.5H1.5ZM5 5V1.5H1.75C1.6837 1.5 1.62011 1.52634 1.57322 1.57322C1.52634 1.62011 1.5 1.6837 1.5 1.75V5H5Z" fill="#60656C"/>
+                </svg>
+                <h1>Jeux Videos</h1>
+            </div>
+        </div>
+        <div id="code_up_line">
+            <div id="code_up_cursor"></div>
+        </div>
+        <div id="downpart">
+            <div id="code_left_content">
+                <div id="file_up_text">
+                    <div id="file_icon">
+                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.15222 11.8677C4.10398 11.8194 4.06571 11.7621 4.0396 11.699C4.01349 11.6359 4.00005 11.5682 4.00005 11.4999C4.00005 11.4315 4.01349 11.3639 4.0396 11.3007C4.06571 11.2376 4.10398 11.1803 4.15222 11.132L9.11631 6.15261C9.18875 6.07977 9.28112 6.03013 9.38172 6.01001C9.48231 5.98989 9.5866 6.00018 9.68136 6.03958C9.77612 6.07898 9.85708 6.14571 9.91398 6.23132C9.97088 6.31693 10.0012 6.41757 10.001 6.52046V16.4793C10.0012 16.5822 9.97088 16.6828 9.91398 16.7684C9.85708 16.854 9.77612 16.9208 9.68136 16.9602C9.5866 16.9996 9.48231 17.0098 9.38172 16.9897C9.28112 16.9696 9.18875 16.92 9.11631 16.8471L4.15222 11.8677Z" fill="#60656C"/>
+                            <path d="M2.40625 0H19.5938C20.922 0 22 1.078 22 2.40625V19.5938C22 20.2319 21.7465 20.844 21.2952 21.2952C20.844 21.7465 20.2319 22 19.5938 22H2.40625C1.76807 22 1.15603 21.7465 0.704774 21.2952C0.253515 20.844 0 20.2319 0 19.5938V2.40625C0 1.078 1.078 0 2.40625 0ZM2.0625 2.40625V19.5938C2.0625 19.7835 2.2165 19.9375 2.40625 19.9375H13.0625V2.0625H2.40625C2.31508 2.0625 2.22765 2.09872 2.16318 2.16318C2.09872 2.22765 2.0625 2.31508 2.0625 2.40625ZM15.125 19.9375H19.5938C19.6849 19.9375 19.7724 19.9013 19.8368 19.8368C19.9013 19.7724 19.9375 19.6849 19.9375 19.5938V2.40625C19.9375 2.31508 19.9013 2.22765 19.8368 2.16318C19.7724 2.09872 19.6849 2.0625 19.5938 2.0625H15.125V19.9375Z" fill="#60656C"/>
+                        </svg>
+                    </div>
+                    <h1>Files</h1>
+                </div>
+                <div id="file_searchbar">
+                    <svg id="left_search_svg" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.2593 19.1494C15.1094 20.8181 12.4044 21.6049 9.69498 21.3495C6.98551 21.0941 4.4752 19.8158 2.67503 17.7747C0.874862 15.7337 -0.0798483 13.0833 0.00523498 10.3632C0.0903183 7.64304 1.2088 5.05755 3.13301 3.13301C5.05755 1.2088 7.64304 0.0903183 10.3632 0.00523498C13.0833 -0.0798483 15.7337 0.874862 17.7747 2.67503C19.8158 4.4752 21.0941 6.98551 21.3495 9.69498C21.6049 12.4044 20.8181 15.1094 19.1494 17.2593L24.5702 22.6801C24.7463 22.8435 24.875 23.0515 24.9428 23.2819C25.0105 23.5124 25.0149 23.7569 24.9554 23.9897C24.8959 24.2224 24.7747 24.4348 24.6046 24.6044C24.4345 24.7741 24.2218 24.8947 23.9889 24.9536C23.7564 25.0132 23.5122 25.0091 23.2819 24.9416C23.0516 24.8741 22.8437 24.7458 22.6801 24.5702L17.2593 19.1494ZM18.7215 10.6972C18.7373 9.63373 18.5415 8.57772 18.1455 7.5906C17.7495 6.60348 17.1612 5.70496 16.4147 4.9473C15.6683 4.18965 14.7787 3.58798 13.7975 3.1773C12.8164 2.76662 11.7635 2.55513 10.6999 2.55513C9.63629 2.55513 8.58331 2.76662 7.60221 3.1773C6.6211 3.58798 5.73145 4.18965 4.98501 4.9473C4.23856 5.70496 3.65022 6.60348 3.25422 7.5906C2.85821 8.57772 2.66244 9.63373 2.6783 10.6972C2.70971 12.8039 3.56866 14.8138 5.06958 16.2925C6.5705 17.7712 8.5929 18.6001 10.6999 18.6001C12.8069 18.6001 14.8293 17.7712 16.3302 16.2925C17.8311 14.8138 18.69 12.8039 18.7215 10.6972Z" fill="#60656C"/>
+                    </svg>
+                    <input type="text" placeholder="Go to file" id="left_searchbar">
+                </div>
+                <div id="file_display">
+                    <div id="blue_box"></div>
+                    <div id="inner_file_display">
+                        <svg viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg" id="file_svg">
+                            <path d="M0 2.51562C0 1.127 1.14585 0 2.55769 0H12.1834C12.8615 0 13.5119 0.2645 13.9913 0.737437L18.2502 4.92631C18.7311 5.39781 19 6.0375 19 6.7045V20.4844C19 21.1516 18.7305 21.7914 18.2509 22.2632C17.7712 22.735 17.1206 23 16.4423 23H2.55769C1.87935 23 1.22879 22.735 0.749131 22.2632C0.269471 21.7914 0 21.1516 0 20.4844V2.51562ZM2.55769 2.15625C2.46079 2.15625 2.36785 2.19411 2.29933 2.26151C2.2308 2.3289 2.19231 2.42031 2.19231 2.51562V20.4844C2.19231 20.6828 2.356 20.8438 2.55769 20.8438H16.4423C16.5392 20.8438 16.6322 20.8059 16.7007 20.7385C16.7692 20.6711 16.8077 20.5797 16.8077 20.4844V8.625H12.7885C12.1101 8.625 11.4596 8.35996 10.9799 7.88819C10.5002 7.41642 10.2308 6.77656 10.2308 6.10938V2.15625H2.55769ZM12.4231 2.24538V6.10938C12.4231 6.30775 12.5868 6.46875 12.7885 6.46875H16.7171L16.701 6.45006L12.4421 2.26119L12.4231 2.24538Z" fill="#60656C"/>
+                        </svg>
+                        <h2 id="file_name">README.md</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="middle_line"></div>
+            <div id="page_content">
+                <div id="page_content_title">
+                    <a href="" id="inner_page_content_title_1">
+                        <h2>sectioncode</h2>
+                    </a>
+                    <h2 id="inner_page_content_title_2">/</h2>
+                    <h2 id="inner_page_content_title_3">README.md</h2>
+                    <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" id="inner_page_content_title_4">
+                        <path d="M0 8.38636C0 7.06909 1.06909 6 2.38636 6H4.43182C4.70306 6 4.9632 6.10775 5.155 6.29955C5.34679 6.49135 5.45455 6.75148 5.45455 7.02273C5.45455 7.29397 5.34679 7.55411 5.155 7.7459C4.9632 7.9377 4.70306 8.04545 4.43182 8.04545H2.38636C2.29595 8.04545 2.20924 8.08137 2.1453 8.1453C2.08137 8.20924 2.04545 8.29595 2.04545 8.38636V18.6136C2.04545 18.8018 2.19818 18.9545 2.38636 18.9545H12.6136C12.7041 18.9545 12.7908 18.9186 12.8547 18.8547C12.9186 18.7908 12.9545 18.7041 12.9545 18.6136V16.5682C12.9545 16.2969 13.0623 16.0368 13.2541 15.845C13.4459 15.6532 13.706 15.5455 13.9773 15.5455C14.2485 15.5455 14.5087 15.6532 14.7004 15.845C14.8922 16.0368 15 16.2969 15 16.5682V18.6136C15 19.2465 14.7486 19.8535 14.3011 20.3011C13.8535 20.7486 13.2465 21 12.6136 21H2.38636C1.75346 21 1.14648 20.7486 0.69895 20.3011C0.25142 19.8535 0 19.2465 0 18.6136L0 8.38636Z" fill="#60656C"/>
+                        <path d="M6 2.38636C6 1.06909 7.06909 0 8.38636 0H18.6136C19.9309 0 21 1.06909 21 2.38636V12.6136C21 13.2465 20.7486 13.8535 20.3011 14.3011C19.8535 14.7486 19.2465 15 18.6136 15H8.38636C7.75346 15 7.14648 14.7486 6.69895 14.3011C6.25142 13.8535 6 13.2465 6 12.6136V2.38636ZM8.38636 2.04545C8.29595 2.04545 8.20924 2.08137 8.1453 2.1453C8.08137 2.20924 8.04545 2.29595 8.04545 2.38636V12.6136C8.04545 12.8018 8.19818 12.9545 8.38636 12.9545H18.6136C18.7041 12.9545 18.7908 12.9186 18.8547 12.8547C18.9186 12.7908 18.9545 12.7041 18.9545 12.6136V2.38636C18.9545 2.29595 18.9186 2.20924 18.8547 2.1453C18.7908 2.08137 18.7041 2.04545 18.6136 2.04545H8.38636Z" fill="#60656C"/>
+                    </svg>
+                </div>
+                <div id="preambule_page_content" class="section_page_content"> <!-- SECTION PREAMBULE -->
+                    <div id="preambule_content">
+                        <h1 class="big_title">Programmation</h1>
+                        <div class="big_title_underline"></div>
+                        <p class="preambule_p">La programmation a ete un grand changement dans ma vie, decouvrir un monde algorithmique avec le quel j'arrivait a realiser des actions que je ne pouvais pas decrire a l'oral m'a debloque un potentiel que je continue d'explorer a l'heure actuelle.</p>
+                        <div class="preambule_image_compilation">
+                            <img src="source/scratch.svg" alt="scratch" class="preambule_img">
+                            <img src="source/Python.svg" alt="python" class="preambule_img">
+                            <img src="source/JavaScript.svg" alt="JS" class="preambule_img">
+                            <img src="source/Arduino.png" alt="Arduino" class="preambule_img">
+                            <img src="source/Csharp.svg" alt="C#" class="preambule_img">
+                        </div>
+                        <p class="preambule_p">Cette partie reprends l'esthetique du site <a href="https://github.com/">Github</a>. <br>
+                        Vous pouvez acceder aux autres onglets Web, Python et Autre au niveau du curseur orange.</p>
+                        <p class="preambule_p">Au cours des dernieres annees, deux grandes categories se sont distinguees (je rassemblerait donc le reste dans "Autre")</p>
+                        <div id="preambule_buttons">
+                            <div class="preambule_button" id="web_button" title="Section Web">
+                                <div class="button_display">
+                                    <h1>Web</h1>
+                                </div>
+                                <p>Tout ce qui touche plus où moins aux pages internet</p>
+                            </div>
+                            <div class="preambule_button" id="python_button" title="Section Python">
+                                <div class="button_display">
+                                    <h1>Python</h1>
+                                </div>
+                                <p>Langage de programmation simple qui peut faire des choses complexes</p>
+                            </div>
+                            <div class="preambule_button" id="autre_button" title="Section Autre">
+                                <div class="button_display">
+                                    <h1>Jeux Videos</hZ1>
+                                </div>
+                                <p>Tous mes projets concernant le jeu vidéo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="web_page_content" class="section_page_content" style="display: none;"> <!-- SECTION WEB -->
+                    <div class="big_big_title">
+                        <h1>Web</h1>
+                    </div>
+                    <h1 class="big_title">Projets recents</h1>
+                    <div class="big_title_underline"></div>
+                    <div class="date_element">
+                        <h2>02/2026</h2>
+                        <h1>BetterDevinci</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="BetterDevinciBg">
+                            <div class="links">
+                                <a href="./download/betterdevinci">
+                                    <div class="link download">
+                                        <img src="source/downloadLogo.svg" alt="dowload logo" title="telecharger le projet en ZIP">
+                                    </div>
+                                </a>
+                                <a href="https://github.com/octerry/BetterDevinci">
+                                    <div class="link github_dowload">
+                                        <img src="source/githubDownloadLogo.svg" alt="github download logo" title="repo github du projet">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_extension">
+                                    <h2>Extension</h2>
+                                </div>
+                                <img src="source/JavaScript.svg" class="tagImg" alt="logo JavaScript" title="cree a base de JavaScript">
+                            </div>
+                            <img src="source/miniaBetterDevinci.png" id="minia_extension" alt="extension page miniature">
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            L'extension chrome BetterDevinci a ete cree pour repondre a un probleme, malgre le fait que l'ecole soit adapte a des travaux sur ordinateur, leur interface WebApp cote eleve n'a pas ete mis a jour depuis longtemps, negligeant des fonctionnalites modernes comme le Darkmode.
+                        </p>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Comment ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Commme montré dans l'exemple si dessus qui montre la page d'acceuil de MyDevinci, l'extension viens ajouter un darkmode, un thème de couleurs personnalisable et un nom changeable pour les personnes qui ne seraient pas à l'aise d'afficher leur nom complet.
+                        </p>
+                        <p>
+                            L'extension viens se lancer entre le moment ou l'utilisateur recoit la page web et le moment ou elle s'affiche pour executer un script qui va changer tous les elements de la page comme dit precedement.
+                        </p>
+                    </div>
+                    <div class="date_element">
+                        <h2>11/2025</h2>
+                        <h1>restaurant Royal</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="restaurantRoyalBg">
+                            <div class="links">
+                                <a href="https://github.com/octerry/RestaurantRoyal">
+                                    <div class="link github_dowload">
+                                        <img src="source/githubDownloadLogo.svg" alt="github download logo" title="repo github du projet">
+                                    </div>
+                                </a>
+                                <a href="https://octerry.github.io/RestaurantRoyal/">
+                                    <div class="link">
+                                        <img src="source/linksvg.svg" alt="github download logo" title="lien vers le site">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_ecole">
+                                    <h2>Projet ecole</h2>
+                                </div>
+                                <div class="tag tag_web">
+                                    <h2>Page Web</h2>
+                                </div>
+                                <img src="source/html.svg" class="tagImg" alt="logo JavaScript" title="cree a base de JavaScript">
+                                <img src="source/cssLogo.svg" class="tagImg" alt="logo JavaScript" title="cree a base de JavaScript">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            A l'occasion de l'Epic Digital Day, un evenement organise par l'IIM Digital School, nous avons du faire un jeu de plateau et un site one page sur notre produit dans le theme pour presenter notre jeu avec une cagnote de crowdfunding.
+                        </p>
+                    </div>
+                    <div class="date_element">
+                        <h2>10/2025</h2>
+                        <h1>terrysegaunes.fr</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="portfoliotBg">
+                            <div class="links">
+                                <a href="https://github.com/octerry/Portfoliot">
+                                    <div class="link github_dowload">
+                                        <img src="source/githubDownloadLogo.svg" alt="github download logo" title="repo github du projet">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_web">
+                                    <h2>Site Web</h2>
+                                </div>
+                                <img src="source/html.svg" class="tagImg" alt="logo HTML" title="cree a base d'HTML">
+                                <img src="source/cssLogo.svg" class="tagImg" alt="logo CSS" title="utilisation de CSS dans ce projet">
+                                <img src="source/JavaScript.svg" class="tagImg" alt="logo JavaScript" title="utilisation de JavaScript dans ce projet">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Ce site internet est un moyen pour moi de répertorier tout ce que j'ai fait car rien n'est plus simple pour classer des elements qu'un site Internet. ça me permet aussi de partager, experimenter et apprendre du travail que je partage et que j'utilise sur mon site.
+                        </p>
+                        <p>
+                            Et oui, "utilise" car ce que vous voyez n'est que la partie visible de l'iceberg, une grande partie du site me sert à experimenter des projets sur un serveur profesionnel comme celui qui héberge cette page.
+                        </p>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Quels sont ces projets ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Les seuls projets que je partage sur cette page sont des projets dans un etat stable et esthetiques donc ces petits projets instables et experimentaux ne sont pas dans les criteres meme si ils pourraient arriver ou inspirer un autre projet qui arrivera un jour sur cette page.
+                        </p>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Que deviendra ce site ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Je compte garder ce site internet longtemps et meme si son contenu pourrait changer avec les années, l'hebergement et le nom de domaine resterons le meme. 
+                        </p>
+                        <p>
+                            Le prochain objectif, des que j'aurais l'argent sera d'ajouter une addition VPS pour executer des scripts complexe et faire avancer beaucoup de projets.
+                        </p>
+                        <p>
+                            J'essaierait de le garder actualise le plus longtemps possible et si vous voyez ceci pendant la construction du site (avec l'ecran "site en construction") je salut votre curiosité.
+                        </p>
+                    </div>
+                    <div class="date_element">
+                        <h2>09/2025</h2>
+                        <h1>Ranked Online Wankul</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="rowBg">
+                            <div class="links">
+                                <a href="https://github.com/octerry/RankedOnlineWankul">
+                                    <div class="link github_dowload">
+                                        <img src="source/githubDownloadLogo.svg" alt="github download logo" title="repo github du projet">
+                                    </div>
+                                </a>
+                                <a href="https://octerry.github.io/RankedOnlineWankul/">
+                                    <div class="link">
+                                        <img src="source/linksvg.svg" alt="github download logo" title="lien vers le site">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_web">
+                                    <h2>Site Web</h2>
+                                </div>
+                                <div class="tag tag_ecole">
+                                    <h2>Projet ecole</h2>
+                                </div>
+                                <img src="source/html.svg" class="tagImg" alt="logo HTML" title="cree a base d'HTML">
+                                <img src="source/cssLogo.svg" class="tagImg" alt="logo CSS" title="utilisation de CSS dans ce projet">
+                                <img src="source/JavaScript.svg" class="tagImg" alt="logo JavaScript" title="utilisation de JavaScript dans ce projet">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Ce site est mon projet d'axe Coding de premiere annee a l'IIM Digital School et qui m'a permis de participer aux pepites de l'IIM, une emission qui mets en avant le meilleur de chaque axe, coding pour ma part.
+                        </p>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Que deviendra ce site ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Comme dit precedement, ce site est le projet de l'annee donc il sera voue a evoluer, que ce soit pour ajouter des fonctionnalites comme un mode de jeu en ligne ou un profil personnel avec un compte mais aussi esthetiquement car il reste des menus a developper au cours de l'aventure.
+                        </p>
+                    </div>
+                    <h1 class="big_title margin_top">Premiers projets experimentaux</h1>
+                    <div class="big_title_underline"></div>
+                    <div class="date_element">
+                        <h2>05/2025</h2>
+                        <h1>Premiere version de ce site</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="oldPortfoliotBg">
+                            <div class="links">
+                                <a href="https://terry-segaunes.alwaysdata.net/">
+                                    <div class="link">
+                                        <img src="source/linksvg.svg" alt="github download logo" title="lien vers le site">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_web">
+                                    <h2>Site Web</h2>
+                                </div>
+                                <img src="source/html.svg" class="tagImg" alt="logo HTML" title="cree a base d'HTML">
+                                <img src="source/cssLogo.svg" class="tagImg" alt="logo CSS" title="utilisation de CSS dans ce projet">
+                                <img src="source/JavaScript.svg" class="tagImg" alt="logo JavaScript" title="utilisation de JavaScript dans ce projet">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Pour rentrer a l'IIM Digital School j'ai decide de faire un site qui allait de servir de Portfoliot pour le presenter lors de l'entretiens d'inscription. Je me lance alors dans un projet qui m'a demande de travailler tous les soirs pendant un mois entier dut a mon manque de connaissance sur le Web avant l'ecole superieur. Le caroussel que vous voyez sur l'image si dessus m'a demande une semaine de recherche et beaucoup de deboggage pour quelque chose que je pourrais refaire actuellement en une journee.
+                        </p>
+                    </div>
+                    <div class="date_element">
+                        <h2>04/2024</h2>
+                        <h1>experimentations CSS</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="joBg">
+                            <div class="links">
+                                <a href="./sous-page/ouisport-premiere/">
+                                    <div class="link">
+                                        <img src="source/linksvg.svg" alt="github download logo" title="lien vers le site">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_web">
+                                    <h2>Page Web</h2>
+                                </div>
+                                <img src="source/html.svg" class="tagImg" alt="logo HTML" title="cree a base d'HTML">
+                                <img src="source/cssLogo.svg" class="tagImg" alt="logo CSS" title="utilisation de CSS dans ce projet">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Cette page web est surement la premiere dont je suis reelement fier. Originelement cette page aurait du servir a lancer des jeux python mais au final nous avons tout fait dans le meme code python donc c'est devenu une reference CSS pour moi.   
+                        </p>
+                    </div>
+                </div>
+                <div id="python_page_content" class="section_page_content" style="display: none;"> <!-- SECTION PYTHON -->
+                    <div class="big_big_title">
+                        <h1>Python</h1>
+                    </div>
+                    <h1 class="big_title">Projets recents</h1>
+                    <div class="big_title_underline"></div>
+                    <div class="date_element">
+                        <h2>02/2026</h2>
+                        <h1>Simul</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="simulBg">
+                            <div class="links">
+                                <a onclick="alert(`Aucun lien n'est disponible pour le moment :/`)">
+                                    <div class="link">
+                                        <img src="source/linksvg.svg" alt="github download logo" title="lien vers le site">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_iot">
+                                    <h2>Objet Connecte IoT</h2>
+                                </div>
+                                <div class="tag tag_ecole">
+                                    <h2>Projet ecole</h2>
+                                </div>
+                                <img src="source/Python.svg" class="tagImg" alt="logo HTML" title="cree a base de Python">
+                                <img src="source/raspberry.svg" class="tagImg" alt="logo raspberry" title="utilisation de cartes raspberry Pi Pico">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Simul est un jeu dans le style de Simon qui permets à plusieurs personnes de jouer les un contre les autres sur la meme sequence. Ce module est notre projet d'objets connectes IoT ou tout le materiel nous a ete fournis par l'ecole.    
+                        </p>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Comment ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            La librairie Python Micropython sur Thonny nous a permis de coder sur des Raspberry Pi Pico avec une fonction client-serveur pour transmettre des informations via le Wifi.
+                        </p>
+                    </div>
+                    <div class="date_element">
+                        <h2>08/2025</h2>
+                        <h1>pingez-Terry</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="botBg">
+                            <div class="links">
+                                <a onclick="alert(`Pour des raisons d'informations sensibles dans le code ce projet est indisponible au public :/`)">
+                                    <div class="link">
+                                        <img src="source/linksvg.svg" alt="link logo" title="lien vers le projet">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_web">
+                                    <h2>Bot Discord</h2>
+                                </div>
+                                <img src="source/Python.svg" class="tagImg" alt="logo HTML" title="cree a base de Python">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Dans l'optique d'experimenter dans des librairies python, j'ai decide de coder un Bot python qui renvoie le nombre de fois que j'ai ete mentionne sur une page et en fait un classement.    
+                        </p>
+                    </div>
+                    <h1 class="big_title">Premier projets experimentaux</h1>
+                    <div class="big_title_underline"></div>
+                    <div class="date_element">
+                        <h2>2024/2025</h2>
+                        <h1>Petits projets de NSI</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="nsiBg">
+                            <div class="links">
+                                <a href="https://terry-segaunes.alwaysdata.net/codeSection.html">
+                                    <div class="link">
+                                        <img src="source/linksvg.svg" alt="github download logo" title="lien vers le site">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_iot">
+                                    <h2>Objet Connecte IoT</h2>
+                                </div>
+                                <div class="tag tag_ecole">
+                                    <h2>Projet ecole</h2>
+                                </div>
+                                <img src="source/Python.svg" class="tagImg" alt="logo HTML" title="cree a base de Python">
+                                <img src="source/raspberry.svg" class="tagImg" alt="logo raspberry" title="utilisation de cartes raspberry Pi Pico">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Une compilation de petits projets faits sur Python durant le lycee pour apprendre les librairies importantes comme Tkinter et Turtle ou tester d'autres libraires dans mon coin comme Json (qui n'est pas adapte pour Python mais qui a ete marrant a utiliser dans ce cadre)
+                        </p>
+                    </div>
+                    <h3 style="color: #4E5B6E; font-weight: 100; text-align: center;" class="margin_top">ici Python concerne le langage de programmation est non l'animal ou n'importe quel autonomase</h3>
+                </div>
+                <div id="autre_page_content" class="section_page_content" style="display: none;"> <!-- SECTION AUTRE -->
+                    <div class="big_big_title">
+                        <h1>Jeux videos</h1>
+                    </div>
+                    <h1 class="big_title">Projets recents</h1>
+                    <div class="big_title_underline"></div>
+                    <div class="date_element">
+                        <h2>04/2026</h2>
+                        <h1>Bibimbap</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="bibimbapBg">
+                            <div class="links">
+                                <a href="./download/bibimbap/">
+                                    <div class="link">
+                                        <img src="source/downloadLogo.svg" alt="download logo" title="telecharger">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_jv">
+                                    <h2>Jeu Video</h2>
+                                </div>
+                                <div class="tag tag_ecole">
+                                    <h2>Projet ecole</h2>
+                                </div>
+                                <img src="source/Csharp.svg" class="tagImg" alt="logo HTML" title="cree a base de Python">
+                                <img src="source/unityLogo.png" class="tagImg" alt="logo raspberry" title="utilisation de cartes raspberry Pi Pico">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Actuellement en co-developpement avec Noctarex, Big Bim Battle Party alias Bibimbap est prévu comme un jeu Beat 'em up où il faudra arriver à la fin de chaque vague d'ennemie en utilisant les armes à disposition
+                        </p>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Un point sur l'avancement ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Pour l'instant je me concentre sur la partie Game Programming ce qui m'a permis de créer mes trois types de mobs: le sauteur qui ne peut que sauter vers le joueur, le rampant qui glisse et se laisse tomber et la mouche qui vole jusqu'au joueur. Le système de mort a été ajouté et le prochain objectif est d'ajouter les armes et apparitions automatiques.
+                        </p>
+                    </div>
+                    <div class="date_element">
+                        <h2>01/2026</h2>
+                        <h1>ExpressIO</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="expressIoBg">
+                            <div class="links">
+                                <a href="./download/expressio/">
+                                    <div class="link">
+                                        <img src="source/downloadLogo.svg" alt="download logo" title="telecharger">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_jv">
+                                    <h2>Jeu Video</h2>
+                                </div>
+                                <div class="tag tag_ecole">
+                                    <h2>Projet ecole</h2>
+                                </div>
+                                <img src="source/Csharp.svg" class="tagImg" alt="logo HTML" title="cree a base de Python">
+                                <img src="source/unityLogo.png" class="tagImg" alt="logo raspberry" title="utilisation de cartes raspberry Pi Pico">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            ExpressIO est mon premier jeu sur editeur et mon premier cours de Game Programming, c'est un plateformer sur un petit robot qui doit s'echaper de son usine a l'aide de ses dash.
+                        </p>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Comment ?</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Cette initiation au moteur de jeu Unity nous a permis de créer ce jeu 2D avec des mécaniques codés et personnalises grace au langage C#.
+                        </p>
+                    </div>
+                    <div class="date_element">
+                        <h2>04/2025</h2>
+                        <h1>Nox Villae</h1>
+                        <div></div>
+                    </div>
+                    <div class="project_illustration">
+                        <div class="project_illustration_bg" id="noxVillaeBg">
+                            <div class="links">
+                                <a href="https://github.com/octerry/Trophee-NSI-2025">
+                                    <div class="link github_dowload">
+                                        <img src="source/githubDownloadLogo.svg" alt="github download logo" title="repo github du projet">
+                                    </div>
+                                </a>
+                                <a href="https://tube-sciences-technologies.apps.education.fr/w/5juvfCdoDaj722jNmJRbrN">
+                                    <div class="link">
+                                        <img src="source/linksvg.svg" alt="github download logo" title="lien vers le site">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag tag_jv">
+                                    <h2>Jeu Video</h2>
+                                </div>
+                                <div class="tag tag_ecole">
+                                    <h2>Projet ecole</h2>
+                                </div>
+                                <img src="source/Python.svg" class="tagImg" alt="logo HTML" title="cree a base de Python">
+                                <img src="source/raspberry.svg" class="tagImg" alt="logo raspberry" title="utilisation de cartes raspberry Pi Pico">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_big_title">
+                        <h1>Qu'est-ce</h1>
+                    </div>
+                    <div class="project_p">
+                        <p>
+                            Nox Villae est mon premier jeu video qui a été code entierement en Python pour lest TropheeNSI. TropheeNSI est un concours de code qui demandait d'utiliser uniquement les ressources et connaissances que nous avions appris lors des cours de NSI. Malheureusement notre ecole n'a ete prevenu que 18 jours avant la deadline donc nous n'avons pas pu concretiser un projet malgre le grand avancement et les exploits realises. Malgre tout, profitez du trailer propre en cliquant sur le lien en haut a gauche de l'image.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>

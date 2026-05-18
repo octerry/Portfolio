@@ -1,0 +1,112 @@
+<!-- Coucou toi qui regarde dans le code
+
+
+/‾‾‾‾‾\ /‾‾‾‾‾] [‾‾‾‾‾‾‾‾] |‾‾‾‾‾] |‾‾‾‾‾\ |‾‾‾‾‾\ |‾| /‾/
+| |‾| | | |‾‾‾   ‾‾|  |‾‾  | |‾‾‾  |     | |     | | |/ /
+| | | | | |        |  |    |  ___] |     / |     / |  _/
+| |_| | | |___     |  |    | |___  | |\ \  | |\ \  | |
+\_____/ \_____]    |__|    |_____] |_| \_\ |_| \_\ |_|
+MADE ON EARTH BY HUMANS
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta property="og:title" content="Terry Segaunes - Art">
+    <meta property="og:description" content="Section art du site web Portfolio de Terry Segaune">
+    <title>Art</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="source/logo.svg">
+    <script defer type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script defer src="slideMenu.js"></script>
+</head>
+<body class="artBody">
+    <div id="indexMenu">
+        <div class="indexMenuCross" onclick="indexHideMenu()">
+            <svg viewBox="0 0 24 24" id="indexMenuSvg" fill="#fff">
+                <path d="M18.47 6.47 12.942 12l5.53 5.53-.942.94L12 12.942l-5.53 5.53-.94-.942L11.058 12l-5.53-5.53.942-.94L12 11.058l5.53-5.53.94.942Z"></path>
+            </svg>
+        </div>
+        <hr>
+        <div class="indexMenuSelection">
+            <h1>Portfolio</h1>
+            <h3>terrysegaunes.fr</h3>
+            <div>
+                <a href="index.html" id="indexAcceuil"><h2>ACCEUIL</h2></a>
+                <a href="code.html" id="indexMenuCode"><h2>CODE</h2></a>
+                <a href="robot.html" id="indexMenuRobot"><h2>ROBOTIQUE</h2></a>
+                <a href="art.html" id="indexMenuArt"><h2>ART</h2></a>
+                <a href="pro.html" id="indexMenuPro"><h2>PROFESSIONNEL</h2></a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div onclick="indexHideMenu()">
+            <svg id="art_amburger_menu" class="amburgerMenu" viewBox="0 0 512 512">
+                <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+            </svg>
+        </div>
+        <div id="art_top_div">
+            <div id="art_top_link">
+                <a href="index2.html"><h1>ACCEUIL</h1></a>
+                <a href="code.html"><h1>CODE</h1></a>
+                <a href="robot.html"><h1>ROBOTIQUE</h1></a>
+            </div>
+            <div id="art_top_inner_bottom">
+                <h2>ART</h2>
+            </div>
+        </div>
+        <img src="source/artWave1.svg" id="art_wave1" class="art_wave">
+        <img src="source/artWave2.svg" id="art_wave2" class="art_wave">
+        <img src="source/artWave3.svg" id="art_wave3" class="art_wave">
+        <img src="source/artWave4.svg" id="art_wave4" class="art_wave">
+    </header>
+    <main id="art_container">
+        <h1 class="container_title">Audiovisuel</h1>
+        <div class="art_project_content">
+            <div class="art_caroussel">
+                <a href="https://www.youtube.com/watch?v=ef2BzPODai0">
+                    <video autoplay muted loop src="source/unPote.mp4"></video>
+                </a>
+                <img src="source/unPoteTournage1.jpg" alt="Tournage 'Un Pote'">
+                <img src="source/unPoteTournage2.jpg" alt="Tournage 'Un Pote'">
+            </div>
+            <h2>"Un Pote" Projet étudiant à l'IIM Digital School</h2>
+        </div>
+        <h1 class="container_title">Montage</h1>
+        <div class="art_project_content">
+            <div class="art_caroussel">
+                <video autoplay muted loop src="source/transitionsCamping.mp4"></video>
+            </div>
+            <h2>Transitions pour une vidéo de camping</h2>
+        </div>
+        <div class="art_project_content">
+            <div class="art_caroussel">
+                <video autoplay muted loop src="source/trailerNoxVillae1.mp4"></video>
+                <video autoplay muted loop src="source/trailerNoxVillae2.mp4"></video>
+            </div>
+            <h2>Trailer Nox Villae (jeu coding)</h2>
+        </div>
+        <h1 class="container_title">3D</h1>
+        <div class="art_project_content">
+            <div class="art_caroussel">
+                <video autoplay muted loop src="source/cockpitDanger.mp4"></video>
+                <model-viewer alt="3d model" src="source/cockpit.glb"
+                style="max-width: 100vw; height: 50vw;"
+                camera-controls
+                shadow-intensity="1"
+                camera-orbit="45deg 45deg"
+                ></model-viewer>
+            </div>
+            <h2>Cockpit Danger</h2>
+        </div>
+        <div class="art_project_content">
+            <div class="art_caroussel">
+                <video autoplay muted loop src="source/vacances18.mp4"></video>
+                <video autoplay muted loop src="source/prodVacances18.mp4"></video>
+            </div>
+            <h2>Projet Vacances 18</h2>
+        </div>
+    </main>
+</body>
